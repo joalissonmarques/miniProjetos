@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  background: $background-header-light;
+  color: $text-light;
+  
+  .logo-nav {
+    font-size: 1.5rem;
+  }
+  nav {
+    .dark-mode {
+      input {
+        &[type="checkbox"]{
+          display: none;
+        }
+      }//end input
+      label {
+        font-size: 1.2rem;
+        cursor: pointer;
+        i.bi {
+          transition: 0.5s;
+          &:hover {
+            color: $hover-icon;
+          }
+        }//end .bi
+        .bi-moon {
+          display: none;
+        }
+      }//end label
+    }//end class dark mode
+  }// end nav
+}// end header

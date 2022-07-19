@@ -9,11 +9,77 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Script JS -->
-  <script type="module" src="1-imc/assets/js/script.js"></script>
+  <script type="module" src="assets/js/changeTheme.js"></script>
 </head>
 <body>
-  
+  <!-- Inicio Navbar -->
+  <header>
+      <!-- Logo -->
+      <div class="logo-nav">
+        <h2>Sua<span>S</span>aúde</h2>
+      </div>
+      <!-- Nav-menus -->
+      <nav class="nav-menu">
+        <div class="dark-mode">
+          <input type="checkbox" name="change-theme" id="change-theme">
+          <label for="change-theme">
+            <i class="bi bi-sun"></i>
+            <i class="bi bi-moon"></i>
+          </label>
+        </div>
+      </nav>
+  </header>
+  <!-- Fim -->
+  <main>
+    <section class="imc container">
+      <div class="sobreImc container">
+        <h2>IMC, o que é?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempore delectus pariatur obcaecati. Dignissimos modi aliquam obcaecati ipsam sunt cumque optio non quod. Dolores laborum, debitis eos consequatur libero error.</p>
+      </div>
+      <div class="comoCalc container">
+        <h2>Como Calcular o IMC</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam beatae magni facere cum sequi doloremque officia obcaecati natus neque molestias accusantium, ipsum esse error vel distinctio iste provident, porro sapiente.</p>
+      </div>
+      <div class="comoInterpretar container">
+        <h2>Como interpretar o resultado de IMC</h2>
+        <p>Depois de obter o resultado de IMC, deve-se interpretar o valor utilizando a seguinte tabela:</p>
+        <table>
+          <tbody>
+            <tr>
+              <th>IMC (kg/m<sup>2</sup>)</th>
+              <th>Classificação</th>
+            </tr>
+            <tr>
+              <td>Menor que 18,5</td>
+              <td>Magreza</td>
+            </tr>
+            <tr>
+              <td>18,5 a 24,9</td>
+              <td>Normal</td>
+            </tr>
+            <tr>
+              <td>25 a 29,9</td>
+              <td>Sobrepeso</td>
+            </tr>
+            <tr>
+              <td>30 a 34,9</td>
+              <td>Obesidade grau I</td>
+            </tr>
+            <tr>
+              <td>35 a 39,9</td>
+              <td>Obesidade grau II</td>
+            </tr>
+            <tr>
+              <td>Maior que 40</td>
+              <td>Obesidade grau III</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

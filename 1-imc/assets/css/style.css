@@ -1,0 +1,68 @@
+/* Cores de texto */
+/* Cores backround */
+/* Effects */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  transition: background 0.5s;
+}
+
+.container {
+  margin: 10px 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  background: #006696;
+  color: #FFF;
+}
+header .logo-nav {
+  font-size: 1.5rem;
+}
+header nav .dark-mode input[type=checkbox] {
+  display: none;
+}
+header nav .dark-mode label {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+header nav .dark-mode label i.bi {
+  transition: 0.5s;
+}
+header nav .dark-mode label i.bi:hover {
+  color: #f8f401;
+}
+header nav .dark-mode label .bi-moon {
+  display: none;
+}
+
+body.dark {
+  background: #00161a;
+}
+body.dark header nav .dark-mode label .bi-sun {
+  display: none;
+}
+body.dark header nav .dark-mode label .bi-moon {
+  display: block;
+}
+
+body.dark {
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */

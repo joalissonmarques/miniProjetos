@@ -1,0 +1,17 @@
+body.dark {
+  background: $background-dark;
+  header {
+    nav {
+      .dark-mode {
+        label {
+          .bi-sun{
+            display: none;
+          }
+          .bi-moon {
+            display: block;
+          }
+        }//end label
+      }//end class dark mode
+    }// end nav
+  }// end header
+}
