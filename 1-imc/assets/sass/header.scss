@@ -7,6 +7,7 @@ header {
   padding: 10px;
   background: $background-header-light;
   color: $text-light;
+  box-shadow: 2px 1px 4px rgba(0,0,0, 0.4);
   
   .logo-nav {
     font-size: 1.5rem;
@@ -21,15 +22,17 @@ header {
       label {
         font-size: 1.2rem;
         cursor: pointer;
-        i.bi {
-          transition: 0.5s;
+          i {
+            &.bi {
+            transition: 0.5s;
+            &.bi-moon{
+              display: none;
+            }
+          }//end .bi
           &:hover {
             color: $hover-icon;
           }
-        }//end .bi
-        .bi-moon {
-          display: none;
-        }
+        }//end i
       }//end label
     }//end class dark mode
   }// end nav

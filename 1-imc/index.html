@@ -11,7 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Script JS -->
-  <script type="module" src="assets/js/changeTheme.js"></script>
+  <script type="module" src="assets/js/imc.js"></script>
 </head>
 <body>
   <!-- Inicio Navbar -->
@@ -34,50 +34,81 @@
   <!-- Fim -->
   <main>
     <section class="imc container">
-      <div class="sobreImc container">
+      <div class="sobre container">
         <h2>IMC, o que é?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempore delectus pariatur obcaecati. Dignissimos modi aliquam obcaecati ipsam sunt cumque optio non quod. Dolores laborum, debitis eos consequatur libero error.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempore delectus pariatur obcaecati. Dignissimos modi aliquam obcaecati ipsam sunt cumque optio non quod. Dolores laborum, debitis eos consequatur libero error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum minus perferendis fugiat quod blanditiis perspiciatis, quasi aperiam? Repellat cupiditate cumque et eveniet perferendis, inventore velit quis minima optio illum.</p>
       </div>
       <div class="comoCalc container">
         <h2>Como Calcular o IMC</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam beatae magni facere cum sequi doloremque officia obcaecati natus neque molestias accusantium, ipsum esse error vel distinctio iste provident, porro sapiente.</p>
       </div>
-      <div class="comoInterpretar container">
+      <div class="comoInter container">
         <h2>Como interpretar o resultado de IMC</h2>
         <p>Depois de obter o resultado de IMC, deve-se interpretar o valor utilizando a seguinte tabela:</p>
-        <table>
-          <tbody>
-            <tr>
-              <th>IMC (kg/m<sup>2</sup>)</th>
-              <th>Classificação</th>
-            </tr>
-            <tr>
-              <td>Menor que 18,5</td>
-              <td>Magreza</td>
-            </tr>
-            <tr>
-              <td>18,5 a 24,9</td>
-              <td>Normal</td>
-            </tr>
-            <tr>
-              <td>25 a 29,9</td>
-              <td>Sobrepeso</td>
-            </tr>
-            <tr>
-              <td>30 a 34,9</td>
-              <td>Obesidade grau I</td>
-            </tr>
-            <tr>
-              <td>35 a 39,9</td>
-              <td>Obesidade grau II</td>
-            </tr>
-            <tr>
-              <td>Maior que 40</td>
-              <td>Obesidade grau III</td>
-            </tr>
-
-          </tbody>
-        </table>
+        <div class="table-imc">
+          <table>
+            <tbody>
+              <tr>
+                <th>IMC (kg/m<sup>2</sup>)</th>
+                <th>Classificação</th>
+              </tr>
+              <tr>
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+              </tr>
+              <tr>
+                <td>18,5 a 24,9</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td>25 a 29,9</td>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr>
+                <td>30 a 34,9</td>
+                <td>Obesidade grau I</td>
+              </tr>
+              <tr>
+                <td>35 a 39,9</td>
+                <td>Obesidade grau II</td>
+              </tr>
+              <tr>
+                <td>Maior que 40</td>
+                <td>Obesidade grau III</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="calculadora container">
+        <h2>Vamos Calcular</h2>
+        <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+        <div class="calculadora-imc">
+          <div class="calc-texto">
+            <h3 class="hidden-calc">Ainda não sabe qual o seu Índice de Massa Corporal (IMC)?</h3>
+            <p class="hidden-calc">Faça o cálculo aqui mesmo e conheça mais sobre o seu corpo.</p>
+            <div class="calc-informacoes">
+              <p class="text-seuImc">
+                <span class="text-seuPeso"></span>
+              </p>
+              <p class="text-result"></p>
+              <div class="text-img">
+              </div>
+            </div>
+          </div>
+          <div class="calc-dados">
+            <h4>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</h4>
+            <form class="calc-form">
+              <label for="altura">
+                <input type="number" name="altura" id="altura" placeholder="Altura (m)" required>
+              </label>
+              <label for="peso">
+                <input type="number" name="peso" id="peso" placeholder="Peso (Kg)" required>
+              </label>
+              <button type="submit" id="buttonImc">Calcular</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>

@@ -1,17 +1,46 @@
-body.dark {
-  background: $background-dark;
-  header {
-    nav {
-      .dark-mode {
-        label {
-          .bi-sun{
-            display: none;
-          }
-          .bi-moon {
-            display: block;
-          }
-        }//end label
-      }//end class dark mode
-    }// end nav
-  }// end header
-}
+body{
+&.dark {
+    background: $background-dark;
+    color: $text-light;
+    header {
+      nav {
+        .dark-mode {
+          label {
+              i {
+                &.bi {
+                  &.bi-sun{
+                    display: none;
+                  }
+                  &.bi-moon{
+                  display: block;
+                }
+              }//end .bi
+            }//end i
+          }//end label
+        }//end class dark mode
+      }// end nav
+    }// end header
+    main{
+      section {
+        &.imc{
+          .comoInter {
+            .table-imc{
+              box-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
+              table {
+                background: $background-light;
+                color: $text-dark;
+                tbody{
+                  tr {
+                    td {
+                      border-bottom: 1px solid #838383;
+                    }//end td
+                  }//end tr
+                }//end tbody
+              }//end table
+            }//end table-imc
+          }//end como interpretar
+        }
+      }
+    }
+  }//end .dark
+}//end body

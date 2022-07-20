@@ -1,7 +1,110 @@
 body {
-  &.dark {
-    color: $text-light;
-  }
+  main{
+    .disabled {
+      display: none;
+    }
+    section {
+      &.imc {
+        h2 {
+          position: relative;
+          font-family: $font-bebas;
+          letter-spacing: 0.2px;
+          font-size: 1.8rem;
+          font-weight: 400;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            height: 100%;
+            width: 5px;
+            background: $background-header-light;
+          }//end after
+        }//end h2
+        p{
+          font-size: 1rem;
+          margin: 20px 0;
+        }
+        .comoInter {
+          .table-imc{
+            max-width: 500px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            table {
+              border-radius: 5px;
+              text-align: center;
+              width: 100%;
+              border-collapse: collapse;
+              tbody{
+                tr {
+                  th {
+                    font-weight: 700;
+                    line-height: 2rem;
+                    background-color: $background-header-light;
+                    color: $text-light;
+                  }
+                  td {
+                    border: 0;
+                    border-bottom: 1px solid #f3f3f3;
+                    padding: 15px 10px;
+                  }//end td
+                }//end tr
+              }//end tbody
+            }//end table
+          }//end table-imc
+        }//end como interpretar
+        .calculadora {
+          .calculadora-imc{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            border-radius: 2px;
+            width: 100%;
+            height: 250px;
 
+            .calc-texto, .calc-dados {
+              padding: 2rem;
+            }
+            .calc-texto {
+              background-color: $background-light;
+              h3 {
+                font-family: $font-bebas;
+                font-size: 2.5rem;
+                font-weight: 500;
+              }
+            }
+            .calc-dados {
+              background-color: $background-header-light;
+              h4 {   
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+              }
+              form {
+                input {
+                  background-color: $input-form;
+                  height: 40px;
+                  border-radius: 2px;
+                  margin: 10px 5px;
+                  padding: 0 10px;
+                }
+                button {
+                  display: block;
+                  cursor: pointer;
+                  border-radius: 2px;
+                  padding: 10px 20px;
+                  color: $text-light;
+                  background-color: $button;
+                  margin: 10px 0;
+                  transition: 0.4s;
 
-}
+                  &:hover {
+                    background-color: $button-hover;
+                  }
+                }//end button form
+              }//end form
+            }//end calc-dados
+          }//end calculadora-imc
+        }//end calculadora
+      }//end imc
+    }//end section
+  }//end main
+}//end body
