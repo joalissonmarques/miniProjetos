@@ -77,9 +77,6 @@ body.dark main section.imc .comoInter .table-imc table tbody tr td {
   border-bottom: 1px solid #838383;
 }
 
-body main .disabled {
-  display: none;
-}
 body main section.imc h2 {
   position: relative;
   font-family: "Bebas Neue";
@@ -133,12 +130,21 @@ body main section.imc .calculadora .calculadora-imc .calc-texto, body main secti
   padding: 2rem;
 }
 body main section.imc .calculadora .calculadora-imc .calc-texto {
+  position: relative;
   background-color: #f1f1f1;
 }
 body main section.imc .calculadora .calculadora-imc .calc-texto h3 {
   font-family: "Bebas Neue";
   font-size: 2.5rem;
   font-weight: 500;
+}
+body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-imagem {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-imagem #imagem {
+  height: 90px;
 }
 body main section.imc .calculadora .calculadora-imc .calc-dados {
   background-color: #0073a8;
@@ -147,14 +153,14 @@ body main section.imc .calculadora .calculadora-imc .calc-dados h4 {
   font-size: 1.3rem;
   line-height: 1.5rem;
 }
-body main section.imc .calculadora .calculadora-imc .calc-dados form input {
+body main section.imc .calculadora .calculadora-imc .calc-dados .form input {
   background-color: #e7e6e6;
   height: 40px;
   border-radius: 2px;
   margin: 10px 5px;
   padding: 0 10px;
 }
-body main section.imc .calculadora .calculadora-imc .calc-dados form button {
+body main section.imc .calculadora .calculadora-imc .calc-dados .form button {
   display: block;
   cursor: pointer;
   border-radius: 2px;
@@ -164,7 +170,7 @@ body main section.imc .calculadora .calculadora-imc .calc-dados form button {
   margin: 10px 0;
   transition: 0.4s;
 }
-body main section.imc .calculadora .calculadora-imc .calc-dados form button:hover {
+body main section.imc .calculadora .calculadora-imc .calc-dados .form button:hover {
   background-color: #cf4b12;
 }
 

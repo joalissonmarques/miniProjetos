@@ -1,8 +1,5 @@
 body {
   main{
-    .disabled {
-      display: none;
-    }
     section {
       &.imc {
         h2 {
@@ -65,11 +62,20 @@ body {
               padding: 2rem;
             }
             .calc-texto {
+              position: relative;
               background-color: $background-light;
               h3 {
                 font-family: $font-bebas;
                 font-size: 2.5rem;
                 font-weight: 500;
+              }
+              .calc-result-imagem{
+                position: absolute;
+                top: 15%;
+                right: 10%;
+                #imagem {
+                  height: 90px;
+                }
               }
             }
             .calc-dados {
@@ -78,7 +84,7 @@ body {
                 font-size: 1.3rem;
                 line-height: 1.5rem;
               }
-              form {
+              .form {
                 input {
                   background-color: $input-form;
                   height: 40px;

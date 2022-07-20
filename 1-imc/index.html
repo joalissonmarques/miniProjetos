@@ -11,7 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Script JS -->
-  <script type="module" src="assets/js/imc.js"></script>
+  <script src="assets/js/imc.js" defer></script>
 </head>
 <body>
   <!-- Inicio Navbar -->
@@ -35,11 +35,11 @@
   <main>
     <section class="imc container">
       <div class="sobre container">
-        <h2>IMC, o que é?</h2>
+        <h2 class="h2-style">IMC, o que é?</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempore delectus pariatur obcaecati. Dignissimos modi aliquam obcaecati ipsam sunt cumque optio non quod. Dolores laborum, debitis eos consequatur libero error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum minus perferendis fugiat quod blanditiis perspiciatis, quasi aperiam? Repellat cupiditate cumque et eveniet perferendis, inventore velit quis minima optio illum.</p>
       </div>
       <div class="comoCalc container">
-        <h2>Como Calcular o IMC</h2>
+        <h2 class="h2-style">Como Calcular o IMC</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam beatae magni facere cum sequi doloremque officia obcaecati natus neque molestias accusantium, ipsum esse error vel distinctio iste provident, porro sapiente.</p>
       </div>
       <div class="comoInter container">
@@ -84,29 +84,17 @@
         <h2>Vamos Calcular</h2>
         <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
         <div class="calculadora-imc">
-          <div class="calc-texto">
-            <h3 class="hidden-calc">Ainda não sabe qual o seu Índice de Massa Corporal (IMC)?</h3>
-            <p class="hidden-calc">Faça o cálculo aqui mesmo e conheça mais sobre o seu corpo.</p>
-            <div class="calc-informacoes">
-              <p class="text-seuImc">
-                <span class="text-seuPeso"></span>
-              </p>
-              <p class="text-result"></p>
-              <div class="text-img">
-              </div>
-            </div>
+          <div id="calc-texto" class="calc-texto">
+            <h3 id="text-resul" class="text-resul">Ainda não sabe qual o seu Índice de Massa Corporal (IMC)?</h3>
+            <p id="text-p-resul" class="text-p-resul">Faça o cálculo aqui mesmo e conheça mais sobre o seu corpo.</p>
           </div>
           <div class="calc-dados">
             <h4>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</h4>
-            <form class="calc-form">
-              <label for="altura">
-                <input type="number" name="altura" id="altura" placeholder="Altura (m)" required>
-              </label>
-              <label for="peso">
-                <input type="number" name="peso" id="peso" placeholder="Peso (Kg)" required>
-              </label>
-              <button type="submit" id="buttonImc">Calcular</button>
-            </form>
+            <div class="form">
+                <input type="number" name="altura" id="altura" placeholder="Altura (m)">
+                <input type="number" name="peso" id="peso" placeholder="Peso (Kg)">
+              <button id="buttonImc">Calcular</button>
+            </div>
           </div>
         </div>
       </div>
