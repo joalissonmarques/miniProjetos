@@ -57,7 +57,7 @@ header nav .dark-mode label i:hover {
 }
 
 body.dark {
-  background: #00161a;
+  background: #012a31;
   color: #FFF;
 }
 body.dark header nav .dark-mode label i.bi.bi-sun {
@@ -65,6 +65,10 @@ body.dark header nav .dark-mode label i.bi.bi-sun {
 }
 body.dark header nav .dark-mode label i.bi.bi-moon {
   display: block;
+}
+body.dark main section.imc .calculadora .calculadora-imc .calc-texto {
+  background-color: #012a31;
+  box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.4);
 }
 body.dark main section.imc .comoInter .table-imc {
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
@@ -114,6 +118,9 @@ body main section.imc .comoInter .table-imc table tbody tr th {
   background-color: #0073a8;
   color: #FFF;
 }
+body main section.imc .comoInter .table-imc table tbody tr th sup {
+  font-size: 0.7rem;
+}
 body main section.imc .comoInter .table-imc table tbody tr td {
   border: 0;
   border-bottom: 1px solid #f3f3f3;
@@ -124,13 +131,11 @@ body main section.imc .calculadora .calculadora-imc {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   border-radius: 2px;
   width: 100%;
-  height: 250px;
 }
 body main section.imc .calculadora .calculadora-imc .calc-texto, body main section.imc .calculadora .calculadora-imc .calc-dados {
   padding: 2rem;
 }
 body main section.imc .calculadora .calculadora-imc .calc-texto {
-  position: relative;
   background-color: #f1f1f1;
 }
 body main section.imc .calculadora .calculadora-imc .calc-texto h3 {
@@ -138,12 +143,11 @@ body main section.imc .calculadora .calculadora-imc .calc-texto h3 {
   font-size: 2.5rem;
   font-weight: 500;
 }
-body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-imagem {
-  position: absolute;
-  top: 15%;
-  right: 10%;
+body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-t .d-flex-resul {
+  display: flex;
+  justify-content: space-between;
 }
-body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-imagem #imagem {
+body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-t .d-flex-resul #imagem {
   height: 90px;
 }
 body main section.imc .calculadora .calculadora-imc .calc-dados {
@@ -191,11 +195,11 @@ body main footer a:hover {
   color: #b3b3b3;
 }
 
-@media screen and (max-width: 360px) {
-  body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-imagem {
-    display: flex;
-    justify-content: center;
-    position: static;
+@media screen and (max-width: 400px) {
+  body main section.imc .calculadora .calculadora-imc .calc-texto .calc-result-t .d-flex-resul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   body main section.imc .calculadora .calculadora-imc .calc-dados .form {
     display: flex;

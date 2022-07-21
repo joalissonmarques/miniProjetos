@@ -39,6 +39,10 @@ body {
                     line-height: 2rem;
                     background-color: $background-header-light;
                     color: $text-light;
+
+                    sup {
+                      font-size: 0.7rem;
+                    }
                   }
                   td {
                     border: 0;
@@ -56,25 +60,23 @@ body {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             border-radius: 2px;
             width: 100%;
-            height: 250px;
-
             .calc-texto, .calc-dados {
               padding: 2rem;
             }
             .calc-texto {
-              position: relative;
               background-color: $background-light;
               h3 {
                 font-family: $font-bebas;
                 font-size: 2.5rem;
                 font-weight: 500;
               }
-              .calc-result-imagem{
-                position: absolute;
-                top: 15%;
-                right: 10%;
-                #imagem {
-                  height: 90px;
+              .calc-result-t {
+                .d-flex-resul {
+                  display: flex;
+                  justify-content: space-between;
+                  #imagem {
+                    height: 90px;
+                  }
                 }
               }
             }
