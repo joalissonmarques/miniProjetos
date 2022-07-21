@@ -1,0 +1,27 @@
+@media screen and (max-width: 360px) {
+  body {
+    main{
+      section {
+        &.imc{
+          .calculadora {
+            .calculadora-imc{
+              .calc-texto {
+                .calc-result-imagem {
+                  display: flex;
+                  justify-content: center;
+                  position: static;
+                }
+              }
+              .calc-dados {
+                .form {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

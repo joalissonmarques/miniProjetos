@@ -11,7 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Script JS -->
-  <script src="assets/js/imc.js" defer></script>
+  <script type="module" src="assets/js/script.js" defer></script>
 </head>
 <body>
   <!-- Inicio Navbar -->
@@ -91,14 +91,17 @@
           <div class="calc-dados">
             <h4>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</h4>
             <div class="form">
-                <input type="number" name="altura" id="altura" placeholder="Altura (m)">
-                <input type="number" name="peso" id="peso" placeholder="Peso (Kg)">
+                <input type="number" name="altura" id="altura" placeholder="Altura (m)" required>
+                <input type="number" name="peso" id="peso" placeholder="Peso (Kg)" required>
               <button id="buttonImc">Calcular</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <p>Desenvolvido por <a href="https://github.com/joalissonmarques" target="_blank"><i class="bi bi-github"></i> Joalisson Marques</a></p>
+    </footer>
   </main>
 </body>
 </html>
