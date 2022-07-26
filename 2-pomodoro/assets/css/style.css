@@ -1,0 +1,185 @@
+/* Fonts */
+@font-face {
+  font-family: "DS-DIGI";
+  src: url(../fonts/DS-DIGI.TTF);
+}
+/* Imports componentes */
+/* Colors Background */
+/* Colors Textos (h1...h6, p...) */
+/* Colors Efeitos */
+/* Fonts */
+.btn-conf {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-size: 1.5rem;
+  height: 55px;
+  color: #D95550;
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 30px 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D95550;
+  padding: 15px 20px;
+  height: 70px;
+  border-bottom: 2px solid rgba(88, 88, 88, 0.3);
+  box-shadow: 1px 2px 15px rgba(255, 255, 255, 0.4);
+}
+header nav .nav-logo .nav-text h2 {
+  font-size: 2rem;
+  color: #FFF;
+}
+header nav .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .nav-items .change-theme {
+  color: #FFF;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+header nav .nav-items .change-theme i {
+  cursor: pointer;
+}
+header nav .nav-items .change-theme i.bi-moon {
+  display: none;
+}
+header nav .nav-items .change-theme input[type=checkbox] {
+  display: none;
+}
+header nav .nav-items .play-music .bi-play {
+  display: none;
+}
+header nav .nav-items .play-music .bi-pause {
+  display: none;
+}
+header nav .nav-items .play-music a {
+  cursor: pointer;
+  color: #FFF;
+  font-size: 2rem;
+}
+
+body {
+  background-color: #D95550;
+}
+body section.conf-pomo .container .inputs-conf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.2);
+}
+body section.conf-pomo .container .inputs-conf .col-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+body section.conf-pomo .container .inputs-conf .col-input label {
+  font-size: 1.5rem;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+body section.conf-pomo .container .inputs-conf .col-input input {
+  box-shadow: 3px 4px 2px rgba(88, 88, 88, 0.3);
+  border-radius: 4px;
+  padding: 20px;
+  width: 150px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+body section.conf-pomo .container .inputs-conf .col-input input[type=number]::-webkit-outer-spin-button, body section.conf-pomo .container .inputs-conf .col-input input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body section.conf-pomo .container .conf-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.timer-pomo {
+  display: none;
+}
+body section.timer-pomo .timer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.timer-pomo .timer-col .timer-text {
+  margin: 40px 0;
+}
+body section.timer-pomo .timer-col .timer-text .timer-text-h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #FFF;
+}
+body section.timer-pomo .timer-col .timer-relogio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(31, 40, 43) 45%, rgb(0, 0, 0) 100%);
+  height: 250px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 5px -5px 1px 2px rgba(0, 0, 0, 0.7);
+}
+body section.timer-pomo .timer-col .timer-relogio .timer h3 {
+  font-family: "DS-DIGI";
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12rem;
+}
+body section.timer-pomo .timer-col .timer-sessoes .title-sessoes {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+body section.timer-final {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+body section.timer-final .title-final {
+  font-size: 3rem;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+body section.timer-final .btn-voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

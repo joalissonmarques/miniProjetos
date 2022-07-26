@@ -1,0 +1,11 @@
+/* Fonts */
+@font-face {
+  font-family: 'DS-DIGI';
+  src: url(../fonts/DS-DIGI.TTF);
+}
+/* Imports componentes */
+@import './variaveis.scss';
+@import './buttons.scss';
+@import './bootstrap.scss';
+@import './header.scss';
+@import './main.scss';

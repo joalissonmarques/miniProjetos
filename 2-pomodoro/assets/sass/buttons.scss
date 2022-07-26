@@ -1,0 +1,15 @@
+.btn-conf {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235 235 235) 0px 6px 0px;
+  font-size: 1.5rem;
+  height: 55px;
+  color: $background-light;
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+}

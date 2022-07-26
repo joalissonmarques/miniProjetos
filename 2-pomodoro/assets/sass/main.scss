@@ -1,0 +1,122 @@
+body {
+  background-color: $background-light;
+
+  section {
+    &.conf-pomo {
+      .container {
+        .inputs-conf {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: $efeito-pomo;
+          padding: 30px;
+          max-width: 800px;
+          height: auto;
+          margin: 0 auto;
+          border-radius: 4px;
+          box-shadow: 3px 1px 3px $efeito-pomo;
+
+          .col-input {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+
+            label {
+              font-size: 1.5rem;
+              color: $text-light;
+              margin-bottom: 10px;
+            }//end label col-input
+
+            input {
+              box-shadow: 3px 4px 2px $efeito-bottom;
+              border-radius: 4px;
+              padding: 20px;
+              width: 150px;
+              font-size: 1.4rem;
+              text-align: center;
+
+              &[type="number"]{
+              &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+              }//end ype number
+            }//end input
+          }//end col-input
+        }//end input-conf
+          .conf-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }//end container
+    }//end pomo-config
+    &.timer-pomo {
+      display: none;
+      .timer-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .timer-text {
+          margin: 40px 0;
+
+          .timer-text-h3 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: $text-light;
+          }
+        }//end timer-text
+
+        .timer-relogio {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $background-timer;
+          height: 250px;
+          width: 500px;
+          margin: 0 auto;
+          border-radius: 10px;
+          box-shadow: 5px -5px 1px 2px rgba(#000, 0.7);
+
+          .timer {
+            h3 {
+              font-family: $font-digi;
+              color: $efeito-shadow;
+              font-size: 12rem;
+            }
+          }
+        }//end timer-relogio
+
+        .timer-sessoes {
+          .title-sessoes {
+            margin: 20px 0;
+            font-size: 2rem;
+            color: $text-light;
+            text-transform: uppercase;
+          }
+        }//end timer sessoes
+
+      }//timer-col
+    }//end timer-pomo
+    &.timer-final{
+      display: none;
+      flex-direction: column;
+      text-align: center;
+
+      .title-final {
+        font-size: 3rem;
+        color: #FFF;
+        margin-bottom: 15px;
+        
+      }
+      .btn-voltar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }//end timer final
+  }//end section
+}//end body 
