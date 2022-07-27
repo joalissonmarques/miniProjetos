@@ -11,16 +11,16 @@ body {
           text-align: center;
           background-color: $efeito-pomo;
           padding: 30px;
-          max-width: 800px;
+          width: 600px;
           height: auto;
           margin: 0 auto;
           border-radius: 4px;
-          box-shadow: 3px 1px 3px $efeito-pomo;
+          box-shadow: 3px 1px 3px $efeito-pomo;        
 
           .col-input {
             display: flex;
             flex-direction: column;
-            margin: 0 20px;
+            margin: 0px 20px;
 
             label {
               font-size: 1.5rem;
@@ -42,6 +42,10 @@ body {
                 }
               }//end ype number
             }//end input
+            small {
+              margin: 10px 0;
+              
+            }//end small
           }//end col-input
         }//end input-conf
           .conf-button {

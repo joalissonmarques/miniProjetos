@@ -23,6 +23,10 @@
   background-color: white;
   transition: color 0.5s ease-in-out 0s;
 }
+.btn-conf:active {
+  transform: translateY(6px);
+  box-shadow: none;
+}
 
 * {
   margin: 0;
@@ -58,20 +62,6 @@ header nav .nav-items {
   align-items: center;
   justify-content: center;
 }
-header nav .nav-items .change-theme {
-  color: #FFF;
-  font-size: 1.5rem;
-  margin-right: 15px;
-}
-header nav .nav-items .change-theme i {
-  cursor: pointer;
-}
-header nav .nav-items .change-theme i.bi-moon {
-  display: none;
-}
-header nav .nav-items .change-theme input[type=checkbox] {
-  display: none;
-}
 header nav .nav-items .play-music .bi-play {
   display: none;
 }
@@ -94,7 +84,7 @@ body section.conf-pomo .container .inputs-conf {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 30px;
-  max-width: 800px;
+  width: 600px;
   height: auto;
   margin: 0 auto;
   border-radius: 4px;
@@ -103,7 +93,7 @@ body section.conf-pomo .container .inputs-conf {
 body section.conf-pomo .container .inputs-conf .col-input {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0px 20px;
 }
 body section.conf-pomo .container .inputs-conf .col-input label {
   font-size: 1.5rem;
@@ -120,6 +110,9 @@ body section.conf-pomo .container .inputs-conf .col-input input {
 }
 body section.conf-pomo .container .inputs-conf .col-input input[type=number]::-webkit-outer-spin-button, body section.conf-pomo .container .inputs-conf .col-input input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+body section.conf-pomo .container .inputs-conf .col-input small {
+  margin: 10px 0;
 }
 body section.conf-pomo .container .conf-button {
   display: flex;
@@ -180,6 +173,54 @@ body section.timer-final .btn-voltar {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  body section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section.conf-pomo .container .inputs-conf {
+    flex-direction: column;
+    padding: 30px 0;
+    width: 280px;
+    margin: 0;
+  }
+  body section.conf-pomo .container .inputs-conf .col-input {
+    margin: 0;
+  }
+  body section.timer-pomo {
+    display: none;
+  }
+  body section.timer-pomo .timer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body section.timer-pomo .timer-col .timer-text {
+    margin: 40px 0;
+  }
+  body section.timer-pomo .timer-col .timer-text .timer-text-h3 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #FFF;
+  }
+  body section.timer-pomo .timer-col .timer-relogio {
+    width: 300px;
+    margin: 0;
+  }
+  body section.timer-pomo .timer-col .timer-relogio .timer h3 {
+    font-size: 6.5rem;
+  }
+  body section.timer-pomo .timer-col .timer-sessoes .title-sessoes {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #FFF;
+    text-transform: uppercase;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

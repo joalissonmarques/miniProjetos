@@ -29,6 +29,7 @@ function executar(){
 
 
 function iniciar() {
+  
   if (acao.value == 0) {
     document.getElementById('erro_acao').innerHTML = 'Adicione os Minutos'
     acao.focus()
@@ -78,10 +79,8 @@ function momentoAcao() {
 
   /* Iniciando a contagem  */
   title.innerHTML = 'ação'
-  title.style.setProperty('color', '#00DB7C')
 
   /* Number de minutos, se colocarmos um + na frente, ele converter para number*/
-
   min = +localStorage.getItem('acao')
 
   min = min - 1

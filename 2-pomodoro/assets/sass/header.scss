@@ -21,27 +21,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      
-      .change-theme {
-        color: $text-light;
-        font-size: 1.5rem;
-        margin-right: 15px;
-
-        i {
-          cursor: pointer;
-
-          &.bi-moon {
-            display: none;
-          }
-        }
-
-        input {
-          &[type="checkbox"]{
-            display: none;
-          }
-        }//end input change-theme
-      }//end .change-theme
-
+  
       .play-music {   
         
         .bi-play {
